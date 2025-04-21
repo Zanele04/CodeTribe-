@@ -10,75 +10,61 @@
 <body>
 <header>
 
-    <div class="logo">
-        <img src="images/zaza.png" alt="Zanele J. Nkosi">
-    </div>
-
-    <nav>
-        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-        <ul id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-        </ul>
-    </nav>
+	<nav class="navbar">
+	        <div class="logo">Zanele J. Nkosi</div>
+			
+			<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+	        <ul class="nav-links">
+	            <li><a href="index.html" class="active">Home</a></li>
+	            <li><a href="about.html">About Me</a></li>
+	            <li><a href="contact.html">Contact</a></li>
+	        </ul>
+    	</nav>		
+	
 </header>
 
-<div class="container" id="home">
-    <img src="images/zee01.jpg" alt="Zanele`s photo">
+<main>
+        <section class="hero-banner">
+            <img src="zee01.jpg" alt="Zanele`s photo" class="profile-photo">
+        </section>
 
-    <h1>Welcome to My Portfolio</h1>
+        <section class="bio-section">
+            <div class="bio-content">
+                <div class="bio-text">
+    	<h2>Welcome to My Portfolio</h2>
 
-    <p class="bio">I am an inspiring and driven software developer who is passionate about technology and eager to learn.
+	<p>I am an inspiring and driven software developer who is passionate about technology and eager to learn.
 		As a hard-working individual, i embrace challenges and i am committed to developing my skills in web development.
 		I believe in honesty and fairness,striving to maintain transparency in all my interactions. 
          	Currently focused on expanding my knowledge  of computers and programming, i am dedicated to creating user-friendly websites that enhances digital experiences.
 		in my free time, i enjoy reading and listening to music, both which fuel my creativity and passion for my work.<br><br>
         	With the bright future ahead, i am excited to make my mark in the tech industry while continuing my journey of growth and discovery.</p>
-</div>
-
-<div class="container" id="about">
-
-    <h1>About Me</h1>
-
-    <p class="text">My name is Zanele Joyce Nkosi. i was born in a rural area called Nhlazatshe in Mpumalanga province. I come from a disadvantaged background, but my experiences have shaped me into a resilient and determined individual. 
-    Growing up, I faced numerous challenges, which fueled my desire to learn and improve my circumstances. I completed my matric in 2012, and I didn’t stop there; I pursued my passion for technology by obtaining a Level 3 Certificate in Information Technology. <br><br> 
-    Computers have always fascinated me. I find joy in coding and the endless possibilities it offers to create and innovate. This passion drives me to continuously learn and expand my skills in the tech world. <br><br> 
-    I believe that with every line of code I write, I am not just solving problems; I am also building a brighter future for myself.
-    Beyond my technical skills, I pride myself on being a good-hearted person. I am friendly and approachable, always willing to lend a helping hand to others. I believe in the power of kindness and strive to create a positive impact in the lives of those around me. 
-    My eagerness to learn and my genuine care for others motivate me to grow both personally and professionally. I am excited about the opportunities ahead and look forward to contributing my skills and passion to meaningful projects in the tech industry.</p>
-
-<div class="circle">
-	<img src="images/juju.jpg" alt="picture of zanele">
-</div>
-
-</div>
-
-
-<div class="container" id="contact">
-    <h1>Contact Us</h1>
-	<h2>Address</h2>
-		<p>153 Nhlazatshe no4</p>
-		<p>Elukwatini</p>
-		<p>1192</p>
-
-    <h2>If you'd like to reach out, <br> you can contact me through  <br> the following:</h2>
-    <p>Email:<a href="mailto:znkosi79@gmail.com">znkosi79@gmail.com</a></p>
-    <p>Phone: 079 285 5741</p>
-
-    <p class="links">Follow me on social media:
-
-        <a href="https://wa.me/0792855741" target="_blank">Whatsapp</a> |
-        <a href="https://linkedin.com/in/zanele-nkosi-31418a201" target="_blank">LinkedIn</a> |
-        <a href="https://www.facebook.com/rejoyce.nkosi" target="_blank">Facebook</a>
-    </p>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d718.7398429238386!2d30.77570445486514!3d-26.054327447591874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-26.053963591762432!2d30.776181888044153!5e1!3m2!1sen!2sza!4v1743984580221!5m2!1sen!2sza" width="600" height="450" allowfullscreen="" class="map"></iframe>
-
-</div>
+		</div>
+		    
+	        <div class="bio-image">
+	                <img src="juju.jpg" alt="picture of zanele" class="circle-image">
+	        </div>    
+            </div>
+        </section>
+    </main>
 
 <footer>
-    <p>&copy; 2025 Zanele J. Nkosi. All rights reserved.</p>
+    <div class="contact-info">
+            <h3>Contact Details</h3>
+			<h2>Address</h2>
+			<p>153 Nhlazatshe no4</p>
+			<p>Elukwatini</p>
+			<p>1192</p>
+			
+		<p>📧Email:znkosi79@gmail.com</p>
+            	<p>📱 +27 79 285 5741</p>
+            <div class="social-links">
+		<a href="https://wa.me/0792855741">Whatsapp</a>
+		<a href="https://www.facebook.com/rejoyce.nkosi">Facebook</a>
+                <a href="https://linkedin.com/in/zanele-nkosi-31418a201">LinkedIn</a>
+                <a href="https://github.com/Zanele04">GitHub</a>
+            </div> 
+        </div>
 </footer>
 
 <script>
