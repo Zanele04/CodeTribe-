@@ -1,73 +1,51 @@
-/* CSS reset */
-body, header, nav, main, div, img, ul, footer {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-/* Style rule for box sizing applies to all elements */
+/* Reset default styles */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f1dfc9;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
-/* Style rules for mobile viewport */
-/* Style rule for header */
-header {
-    top: 0;
-    background: #8f07df;
-    padding: 10px 0;
+/* Navigation */
+.navbar {
+    background-color: #333;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 160px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
-    margin: 0 auto;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-/* Style rules for navigation area */
-nav {
-    padding: 1%;
-    margin-bottom: 1%;
-    display: flex;
-    align-items: center;
-    float: right;
-}
-
-nav ul {
+.nav-links {
     list-style: none;
-    text-align: center;
     display: flex;
+    gap: 2rem;
 }
 
-nav li {
-    margin-right: 10px;
-    border-top: 1px solid #db0de2;
-    font-size: 1.5em;
-    font-family: 'Francois One', sans-serif;
-}
-
-nav a {
-    color: #fa07ee;
+.nav-links a {
+    color: white;
     text-decoration: none;
-    padding: 5px 10px;
-    transition: background 0.3s;
+    padding: 0.5rem 1rem;
 }
 
-nav a:hover {
-    background: rgb(134, 25, 148);
-    border-radius: 5px;
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #555;
+    border-radius: 4px;
 }
 
 .hamburger {
@@ -76,163 +54,172 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* Styles for the main */
-main {
-    padding: 2%;
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.2em;
-}
-
-.container {
-    margin: auto;
-}
-
-h1 {
-    text-align: center;
-    margin: 0, 0.5em;
-    color: #7317a8;
-}
-
-h2 {
-    padding: 0.2em 0 0.1em 0;
-    margin: 0.2em 0 0 0;
-    color: #7e25b3;
-}
-
-#home img {
+/* Hero Banner */
+.hero-banner {
+    margin-top: 60px;
     width: 100%;
-    height: auto;
-    display: block;
-}
-
-.bio {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-}
-
-#about {
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-}
-
-.text {
-    max-width: 600px;
-    margin-left: 20px;
-}
-
-.circle img {
-    width: 400px;
-    height: 370px;
-    border-radius: 50%;
+    height: 80vh;
     overflow: hidden;
-    object-fit: cover;
-    margin-right: 10px;
+    position: relative;
 }
 
-#contact {
-    padding: 20px;
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Bio Section */
+.bio-section {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+}
+
+.bio-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.bio-text {
+    flex: 2;
+}
+
+.bio-text h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.bio-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* About content */
+.about-section {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+}
+
+.about-content {
+    margin-left: 25px;
+    align-items: left;
+    gap: 3rem;
+}
+
+.image {
+	margin-top: 60px;
+    max-width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 2rem;
+}
+
+.contact-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+.social-links {
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: white;
+    color: #333;
 }
 
 .map {
+	margin-top: 30px;
     justify-content: center;
-    border: 8px solid #ad0fd4;
+    border: 8px solid black;
     align-items: center;
     display: flex;
 }
 
-/* Style rules for footer content */
-footer p {
-    text-align: center;
-    font-size: 0.85em;
-    color: #a90fd8;
-    padding: 1em 0;
-}
-
-footer p a {
-    color: #af0fdf;
-    text-decoration: none;
-}
-
-/* Responsive styles using media queries */
+/* Responsive Design */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .logo {
-        margin-bottom: 10px;
-    }
-
-    nav {
-        float: none;
+    .bio-content {
         flex-direction: column;
         text-align: center;
     }
 
-    nav ul {
-        flex-direction: column;
-        padding: 0;
+    .circle-image {
+        width: 200px;
+        height: 200px;
     }
 
-    nav li {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .bio {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #about {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .circle img {
-        width: 100%;
-        height: auto;
-        margin: 0;
-    }
-
-    main {
-        font-size: 1em;
+    .nav-links {
+        gap: 1rem;
     }
 }
 
 @media (max-width: 480px) {
-    nav ul {
-        flex-direction: column;
-        padding: 0;
+    .nav-links {
+        font-size: 0.9rem;
     }
-
-    .hamburger {
+	
+	.hamburger {
         display: block;
     }
 
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background: #8f07df;
-        border-radius: 5px;
+    .hero-banner {
+        height: 60vh;
     }
 
-    nav ul.open {
-        display: flex;
+    .circle-image {
+        width: 150px;
+        height: 150px;
     }
-
-    .bio, #about, main {
-        padding: 1%;
-    }
-}
-
-/* Media Query for Print */
-@media print { 
-	body { 
-		background-color: #fff;
-		color: #000; 
-	}	
 }
